@@ -6,7 +6,7 @@ class ToDoList implements TaskList {
     // ArrayList can be used to store tasks without limits on the number of entries.
     // In this case, it allows for dynamic storage of tasks.
     ArrayList<Task> tasks = new ArrayList<Task>();
-    
+
     @Override
     public void addTask(Task task) {
         tasks.add(task);

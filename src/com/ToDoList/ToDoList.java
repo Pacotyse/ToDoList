@@ -15,14 +15,18 @@ class ToDoList implements TaskList {
 
     @Override
     public void displayTasks() {
-        for (Task t : tasks) {
-            System.out.println(t);
+        for (Task task : tasks) {
+            System.out.println(task);
         }
     }
 
     @Override
     public void removeTask(int taskId) {
-        int index = taskId - 1;
-        tasks.remove(index);
+        for (int i = 0; i < tasks.size(); i++) {
+            if (tasks.get(i).getId() == taskId) {
+                tasks.remove(i);
+                break;
+            }
+        }
     }
 }

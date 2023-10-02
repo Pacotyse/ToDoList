@@ -29,6 +29,8 @@ public class Console {
                     break;
                 case "remove":
                     System.out.println("Enter the ID of the task to remove:");
+                    int taskId = scanner.nextInt();
+                    toDoList.removeTask(taskId);
                     break;
                 case "quit":
                     System.out.println("Exiting the to-do list application.");

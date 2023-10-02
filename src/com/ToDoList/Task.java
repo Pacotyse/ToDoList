@@ -12,6 +12,10 @@ public class Task {
         this.description = description;
     }
 
+    public int getId() {
+        return id;
+    }
+
     // This method is overriding a native Java's uppermethod.
     @Override
     public String toString() {

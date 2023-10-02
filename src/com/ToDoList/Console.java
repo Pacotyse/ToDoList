@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Console {
 
     private static Scanner scanner = new Scanner(System.in);
+    private static ToDoList toDoList = new ToDoList();
 
     /**
      * Reads user commands from the console and interacts with the to-do list application accordingly.
@@ -14,20 +15,20 @@ public class Console {
         String command;
         do {
             System.out.println("Available commands: show / add / remove / quit");
-            command = scanner.next().toLowerCase();
+            command = scanner.nextLine().toLowerCase();
 
             switch (command) {
                 case "show":
                     System.out.println("Displaying tasks:");
-                    // Call a method to display tasks here if needed
+                    toDoList.displayTasks();
                     break;
                 case "add":
                     System.out.println("Enter a new task description:");
-                    // Call a method to add a new task here if needed
+                    String taskDescription = scanner.nextLine();
+                    toDoList.addTask(taskDescription);
                     break;
                 case "remove":
                     System.out.println("Enter the ID of the task to remove:");
-                    // Call a method to remove a task here if needed
                     break;
                 case "quit":
                     System.out.println("Exiting the to-do list application.");

@@ -1,7 +1,7 @@
 package com.ToDoList;
 
 public interface TaskList {
-    void addTask(Task task);
+    void addTask(String description);
     void displayTasks();
     void removeTask(int taskId);
 }

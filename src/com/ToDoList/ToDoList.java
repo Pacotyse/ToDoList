@@ -8,7 +8,8 @@ class ToDoList implements TaskList {
     ArrayList<Task> tasks = new ArrayList<Task>();
 
     @Override
-    public void addTask(Task task) {
+    public void addTask(String description) {
+        Task task = new Task(description);
         tasks.add(task);
     }
 

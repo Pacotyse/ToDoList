@@ -14,14 +14,11 @@ public class Console {
     public static void readCommand() {
         String command;
         do {
-            System.out.println("Available commands: show / add / remove / quit");
+            toDoList.displayTasks();
+            System.out.println("Available commands: add / remove / quit");
             command = scanner.nextLine().toLowerCase();
 
             switch (command) {
-                case "show":
-                    System.out.println("Displaying tasks:");
-                    toDoList.displayTasks();
-                    break;
                 case "add":
                     System.out.println("Enter a new task description:");
                     String taskDescription = scanner.nextLine();

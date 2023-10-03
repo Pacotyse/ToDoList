@@ -15,9 +15,11 @@ class ToDoList implements TaskList {
 
     @Override
     public void displayTasks() {
+        System.out.println("--- My tasks ---");
         for (Task task : tasks) {
             System.out.println(task);
         }
+        System.out.println("----------------");
     }
 
     @Override

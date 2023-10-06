@@ -2,6 +2,9 @@ package com.ToDoList;
 
 import java.util.Scanner;
 
+/**
+ * This class represents a console interface for interacting with a to-do list application.
+ */
 public class Console {
 
     private static Scanner scanner = new Scanner(System.in);
@@ -35,12 +38,19 @@ public class Console {
         } while (!command.equals("quit"));
     }
 
+    /**
+     * Prompts the user to enter a new task description and adds it to the to-do list.
+     */
     private static void addTask() {
         System.out.println("Enter a new task description:");
         String taskDescription = scanner.nextLine();
         toDoList.addTask(taskDescription);
     }
 
+    /**
+     * Prompts the user to enter the ID of the task to remove and removes it from the to-do list.
+     * Displays an error message if the entered ID is not valid.
+     */
     private static void removeTask() {
         System.out.println("Enter the ID of the task to remove:");
         int taskId;

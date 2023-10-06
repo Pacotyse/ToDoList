@@ -28,6 +28,7 @@ public class Console {
                     System.out.println("Enter the ID of the task to remove:");
                     int taskId = scanner.nextInt();
                     toDoList.removeTask(taskId);
+                    scanner.nextLine();
                     break;
                 case "quit":
                     System.out.println("Exiting the to-do list application.");

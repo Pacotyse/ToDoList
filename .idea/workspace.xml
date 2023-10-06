@@ -44,6 +44,11 @@
     "onboarding.tips.debug.path": "/Users/pacotyse/Desktop/ToDoList/src/Main.java"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ToDoList" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ToDoList.Main" />

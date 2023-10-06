@@ -43,8 +43,12 @@ public class Console {
 
     private static void removeTask() {
         System.out.println("Enter the ID of the task to remove:");
-        int taskId = scanner.nextInt();
-        toDoList.removeTask(taskId);
-        scanner.nextLine();
+        int taskId;
+        try {
+            taskId = Integer.parseInt(scanner.nextLine());
+            toDoList.removeTask(taskId);
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid ID. Please enter a valid integer ID.");
+        }
     }
 }
